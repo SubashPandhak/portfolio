@@ -1,9 +1,12 @@
 import React from "react";
+import SharedAbout from "./shared/SharedAbout";
+import BackNnav from "./shared/BackNnav";
 
 function About() {
   return (
     <div>
-      <h3>About Us</h3>
+      <BackNnav />
+      <SharedAbout />
     </div>
   );
 }

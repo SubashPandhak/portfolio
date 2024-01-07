@@ -14,3 +14,13 @@
   align-items: center;
   flex-direction: column;
 }
+
+.logo-info,
+#contact-logo,
+#the-portfolio:hover {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}

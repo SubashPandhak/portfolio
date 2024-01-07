@@ -1,28 +1,68 @@
 import React from "react";
-import { UserCircle, AirplaneTilt } from "@phosphor-icons/react";
+import { UserCircle } from "@phosphor-icons/react";
 import { PiBooksLight } from "react-icons/pi";
 import { SiAboutdotme } from "react-icons/si";
+import { PiCertificateLight } from "react-icons/pi";
 import "../index.css";
-import portfolio from "../assets/logo.png";
 import Logo from "./shared/Logo";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+// import { Link } from "react-router-dom";
 
 function Navbar() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
-      <div
-        style={{ height: 15, width: "100vw", backgroundColor: "#edeae3" }}
-      ></div>
-      <nav className="flex space-x-20 justify-center items-center mt-8">
-        <div className="flex items-center">
-          <Logo title={"Home"} icon={<PiBooksLight size={70} />} />
-          <Logo title={"About"} icon={<SiAboutdotme size={70} />} />
-        </div>
-        <div>
-          <img src={portfolio} style={{ height: 150 }} />
-        </div>
-        <div className="flex items-center ">
-          <Logo title={"Contact"} icon={<UserCircle size={70} />} />
-          <Logo title={"CV"} icon={<AirplaneTilt size={70} />} />
+      <nav
+        style={{
+          background: "rgba(255, 255, 255, 0.06)",
+
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          backdropFilter: " blur(3.9px)",
+        }}
+        className=" flex space-x-20 justify-between items-center px-4 py-2  bg-[rgba(245, 40, 145, 0.77)] fixed top-0 min-w-full z-10"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-delay="50"
+        data-aos-duration="500"
+      >
+        <a href={"#home"}>
+          <div
+            id="the-portfolio"
+            className="font-system text-5xl text-white ml-4"
+          >
+            <p>THE</p>
+            <p>PORTFOLIO</p>
+          </div>
+        </a>
+        <div className=" flex items-center">
+          <a href={"#home"}>
+            <Logo
+              title={"Home"}
+              icon={<PiBooksLight color="white" size={40} />}
+            />
+          </a>
+          <a href={"#about-us"}>
+            <Logo
+              title={"About"}
+              icon={<SiAboutdotme color="white" size={40} />}
+            />
+          </a>
+          <a href="#contact">
+            <Logo
+              title={"Contact"}
+              icon={<UserCircle color="white" size={40} />}
+            />
+          </a>
+          <Logo
+            title={"CV"}
+            icon={<PiCertificateLight color="white" size={40} />}
+          />
         </div>
       </nav>
     </>
