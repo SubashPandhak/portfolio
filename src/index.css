@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  height: 250px;
+  width: 100vw;
+}
+
+.logo-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
