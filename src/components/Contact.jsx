@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ContactLogo from "./shared/ContactLogo";
+import contact from "../assets/contact.png";
 
 function Contact() {
   useEffect(() => {
@@ -27,7 +28,7 @@ function Contact() {
           >
             <img
               className="object-fill h-[400px] min-w-[500px]"
-              src="src\assets\contact.png"
+              src={contact}
             />
           </div>
           <div

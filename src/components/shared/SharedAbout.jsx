@@ -3,6 +3,7 @@ import PagePadding from "./PagePadding";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import about from "../../assets/about.png";
 
 function SharedAbout() {
   useEffect(() => {
@@ -34,10 +35,7 @@ function SharedAbout() {
             data-aos-delay="50"
             data-aos-duration="1000"
           >
-            <img
-              className="h-[400px] min-w-[500px] object-fill"
-              src="src\assets\about.png"
-            />
+            <img className="h-[400px] min-w-[500px] object-fill" src={about} />
           </div>
         </div>
       </PagePadding>
