@@ -8,6 +8,7 @@ import Logo from "./shared/Logo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+// import portfolio from "../assets/portfolio.png";
 // import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -34,7 +35,7 @@ function Navbar() {
         <a href={"#home"}>
           <div
             id="the-portfolio"
-            className="font-system text-5xl text-white ml-4"
+            className="font-system text-5xl text-white ml-4 "
           >
             <p>THE</p>
             <p>PORTFOLIO</p>
@@ -59,10 +60,12 @@ function Navbar() {
               icon={<UserCircle color="white" size={40} />}
             />
           </a>
-          <Logo
-            title={"CV"}
-            icon={<PiCertificateLight color="white" size={40} />}
-          />
+          <a href="#projects">
+            <Logo
+              title={"CV"}
+              icon={<PiCertificateLight color="white" size={40} />}
+            />
+          </a>
         </div>
       </nav>
     </>

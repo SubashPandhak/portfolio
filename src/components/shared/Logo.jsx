@@ -1,7 +1,6 @@
 import React from "react";
 
 function Logo(props) {
-  console.log("🚀 ~ file: logo.jsx:5 ~ Logo ~ props:", props);
 
   return (
     <>

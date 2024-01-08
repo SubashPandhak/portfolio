@@ -4,6 +4,8 @@ import PagePadding from "./shared/PagePadding";
 import BackNnav from "./shared/BackNnav";
 import Contact from "./Contact";
 import profile from "../assets/about.jpg";
+// import Experience from "./Experience";
+import Project from "./Project";
 
 function Main(props) {
   return (
@@ -28,6 +30,9 @@ function Main(props) {
       </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="projects">
+        <Project />
       </div>
     </>
   );
