@@ -1,12 +1,13 @@
 import React from "react";
 
 function Logo(props) {
-
   return (
     <>
-      <div className="logo-info">
-        <div className="ml-5 mr-5 ">{props.icon}</div>
-        <p className="font-system text-xl font-semibold text-white">{props.title}</p>
+      <div className=" logo-info flex items-center justify-center ">
+        {props.icon}
+        <p className="font-system text-xl font-normal text-white hover:font-extrabold p-2">
+          {props.title}
+        </p>
       </div>
     </>
   );

@@ -21,10 +21,9 @@ const router = createBrowserRouter([
 ]);
 function App() {
   return (
-    <>
-      
+    <div style={{ overflow: "hidden" }}>
       <RouterProvider router={router} />
-    </>
+    </div>
   );
 }
 

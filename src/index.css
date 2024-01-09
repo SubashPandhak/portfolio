@@ -8,13 +8,6 @@
   width: 100vw;
 }
 
-.logo-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .logo-info,
 #contact-logo,
 #the-portfolio:hover {
@@ -23,4 +16,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.navclip {
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 1s;
+}
+
+.navclip-active {
+  clip-path: circle(100%);
 }

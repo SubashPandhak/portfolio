@@ -19,7 +19,7 @@ export default {
         },
       },
       animation: {
-        bounce: "bounce 4s infinite",
+        bounce: "bounce 3s infinite",
       },
     },
   },

@@ -11,7 +11,6 @@ const Background = () => {
       await loadSlim(engine);
     })
       .then(() => {
-        console.log("HELLO");
         setInit(true);
       })
       .catch((e) => {
@@ -19,9 +18,7 @@ const Background = () => {
       });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = () => {};
 
   const options = useMemo(
     () => ({
@@ -33,21 +30,14 @@ const Background = () => {
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
           onHover: {
             enable: true,
             mode: "repulse",
           },
         },
         modes: {
-          push: {
-            quantity: 4,
-          },
           repulse: {
-            distance: 50,
+            distance: 70,
             duration: 0.4,
           },
         },
@@ -77,7 +67,7 @@ const Background = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,

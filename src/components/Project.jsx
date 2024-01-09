@@ -1,10 +1,15 @@
 import React from "react";
 import PagePadding from "./shared/PagePadding";
 import Images from "./shared/Images";
-import images from "../assets/profile.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+import calculator from "../assets/project-profile/calculator.png";
+import guessGame from "../assets/project-profile/guess-game.png";
+import movieWatch from "../assets/project-profile/movie-watch.png";
+import musicPlayer from "../assets/project-profile/music-player.png";
+import textutils from "../assets/project-profile/textutils.png";
 
 function Project() {
   useEffect(() => {
@@ -19,37 +24,37 @@ function Project() {
             My Project.
           </h1>
           <div
-            style={{ gridTemplateRows: "150px 150px 150px" }}
-            className="grid grid-cols-3 gap-[20px] "
+            style={{ gridTemplateRows: "auto auto " }}
+            className="grid grid-cols-2 gap-3 "
           >
-            <Images animation={"fade-down-right"} image={images} />
-            <Images animation={"fade-down"} image={images} />
-            <Images animation={"fade-down-left"} image={images} />
-            <div
-              data-aos="flip-left"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className=" overflow-hidden row-span-2 col-span-2"
-            >
-              <img
-                className="grid-double object-cover  h-[300px] w-[650px] hover:scale-110 transition-all duration-500"
-                src={images}
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className=" overflow-hidden row-span-2"
-            >
-              <img
-                className="grid-double object-cover  h-[300px] w-[300px] hover:scale-110 transition-all duration-500"
-                src={images}
-              />
-            </div>
-            {/* <Images animation={"fade-left"} image={images} />
-            <Images animation={} image={images} /> */}
+            <a href="">
+              <Images animation={"fade-down-right"} image={musicPlayer} />
+            </a>
+
+            <a href="">
+              <Images animation={"fade-down-left"} image={calculator} />
+            </a>
+            <a className="row-span-2 col-span-2" href="">
+              <div
+                data-aos="flip-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className=" overflow-hidden  h-[300px] border-2 rounded-md hover:cursor-pointer"
+              >
+                <img
+                  className="grid-double object-cover object-center h-full w-full hover:scale-110 transition-all duration-500 "
+                  src={movieWatch}
+                />
+              </div>
+            </a>
+            <a href="">
+              <Images animation={"fade-right"} image={guessGame} />
+            </a>
+            <a href="">
+              <Images animation={"fade-left"} image={textutils} />
+            </a>
           </div>
+          <p className="text-white text-2xl p-3">Hope you like it !!</p>
         </div>
       </PagePadding>
     </>
