@@ -38,12 +38,16 @@ function Main(props) {
             />
             <div className="profile flex flex-col items-center justify-center border-b-[5px black] animate-bounce ">
               <img
-                className=" h-[350px] w-[350px] rounded-[50%] mb-3 object-cover"
+                className=" h-[350px] md:h-[500px] lg:h-[350px] w-[350px] md:w-[500px] lg:w-[350px] rounded-[50%] mb-3 object-cover"
                 src={profile}
               />
-              <div className="font-system font-semibold text-white flex justify-center items-center flex-col">
-                <p className="text-8xl font-extrabold mt-3">Subash Limbu</p>
-                <p className="text-2xl mt-2">Frontend Developer and Designer</p>
+              <div className="font-system font-semibold md:font-bold text-white flex justify-center items-center flex-col">
+                <p className="text-8xl md:text-9xl lg:text-8xl mt-3">
+                  Subash Limbu
+                </p>
+                <p className="text-2xl md:text-4xl lg:text-3xl mt-2">
+                  Frontend Developer and Designer
+                </p>
               </div>
             </div>
           </div>
@@ -53,9 +57,9 @@ function Main(props) {
         </div>
         <div id="contact">
           <Contact />
-        </div>
-        <div id="projects">
-          <Project />
+          <div id="projects">
+            <Project />
+          </div>
         </div>
       </div>
     </>

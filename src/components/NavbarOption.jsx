@@ -13,7 +13,7 @@ function NavbarOption(props) {
         }}
         className={`${
           props.isNavClicked ? "navclip-active" : "navclip"
-        } navclip h-[80px] pt-[12px] px-4 w-full z-10 fixed top-0 `}
+        } navclip h-[80px] md:h-[120px] lg:h-[130px] pt-[12px] px-4 w-full z-10 fixed top-0 `}
       >
         <div className="flex justify-center items-center ml-3">
           <div onClick={props.handleNavClick}>

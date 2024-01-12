@@ -5,7 +5,7 @@ function ContactLogo(props) {
     <>
       <div
         id="contact-logo"
-        className="flex gap-2 font-system items-center font-semibold text-xl"
+        className="flex gap-2 font-system items-center font-semibold text-xl md:text-4xl lg:text-4xl "
       >
         <div>{props.icon}</div>
         <p>{props.name}</p>
