@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "../index.css";
+import { useState } from "react";
 
 import calculator from "../assets/project-profile/calculator.png";
 import guessGame from "../assets/project-profile/guess-game.png";
@@ -12,12 +13,16 @@ import movieWatch from "../assets/project-profile/movie-watch.png";
 import musicPlayer from "../assets/project-profile/music-player.png";
 import textutils from "../assets/project-profile/textutils.png";
 import line from "../assets/undis.png";
+import ImageOnHover from "./ImageOnHover";
 
 function Project() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const [image, setImage] = useState(null);
+
   return (
     <>
       <PagePadding>
@@ -26,60 +31,48 @@ function Project() {
             My Project.
           </h1>
           <div className="flex justify-between items-center">
-            <div className="flex flex-col font-system text-white text-4xl lg:text-5xl">
-              <div className="w-fit cursor-pointer">
-                <a
-                  href="https://main--mero-music-player.netlify.app/"
-                  target="_blank"
-                >
-                  <p className="pt-4 ">Mero Music-Player</p>
-                  <img className="h-2 w-full " src={line} />
-                </a>
-              </div>
-              <div className="w-fit">
-                <a
-                  href="https://main--mero-calculatorapp.netlify.app/"
-                  target="_blank"
-                >
-                  <p className="pt-4 cursor-pointer">Mero Calculator</p>
-                  <img className="h-2 w-full" src={line} />
-                </a>
-              </div>
-              <div className="w-fit cursor-pointer">
-                <a
-                  href="https://main--mero-movies.netlify.app/"
-                  target="_blank"
-                >
-                  <p className="pt-4 ">Mero Movies</p>
-                  <img className="h-2 w-full" src={line} />
-                </a>
-              </div>
-              <div className="w-fit cursor-pointer">
-                <a
-                  href="https://main--mero-guess-game.netlify.app/"
-                  target="_blank"
-                >
-                  <p className="pt-4 ">Guess Game</p>
-                  <img className="h-2 w-full" src={line} />
-                </a>
-              </div>
-              <div className="w-fit cursor-pointer">
-                <a
-                  href="https://main--mero-textutils.netlify.app/"
-                  target="_blank"
-                >
-                  <p className="pt-4 ">Mero TextUtils</p>
-                  <img className="h-2 w-full" src={line} />
-                </a>
-              </div>
+            <div className="flex flex-col font-system text-white text-4xl lg:text-5xl md:h-[400px] lg:h-[450px] place-content-end">
+              <ImageOnHover
+                name={"Mero Music-Player"}
+                setImage={setImage}
+                hoverImage={musicPlayer}
+                image={image}
+              />
+
+              <ImageOnHover
+                name={"Mero Calculator"}
+                setImage={setImage}
+                hoverImage={calculator}
+                image={image}
+              />
+
+              <ImageOnHover
+                name={"Mero Movies"}
+                setImage={setImage}
+                hoverImage={movieWatch}
+                image={image}
+              />
+
+              <ImageOnHover
+                name={"Guess Game"}
+                setImage={setImage}
+                hoverImage={guessGame}
+                image={image}
+              />
+
+              <ImageOnHover
+                name={"Mero TextUtils"}
+                setImage={setImage}
+                hoverImage={textutils}
+                image={image}
+              />
             </div>
-            <div className="custom-bg md:h-[400px] lg:h-[500px] md:w-[450px] lg:w-[550px] rounded-tl-[100px]"></div>
+            {image && (
+              <div className=" bg-red overflow-hidden md:h-[400px] lg:h-[450px] md:w-[450px] lg:w-[550px] md:border-b-2 md:border-r-2 rounded-tl-[100px]">
+                <Images animation={"fade-down-right"} image={image} />
+              </div>
+            )}
           </div>
-          {/* <Images animation={"fade-down-right"} image={musicPlayer} /> */}
-          {/* <Images animation={"fade-down-left"} image={calculator} /> */}
-          {/* <Images animation={"fade-down-left"} image={movieWatch} /> */}
-          {/* <Images animation={"fade-right"} image={guessGame} /> */}
-          {/* <Images animation={"fade-left"} image={textutils} /> */}
         </div>
       </PagePadding>
     </>

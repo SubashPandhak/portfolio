@@ -7,10 +7,10 @@ function Images(props) {
         data-aos={props.animation}
         data-aos-delay="50"
         data-aos-duration="1000"
-        className="hover:cursor-pointer overflow-hidden h-[150px] md:h-[250px] lg:h-[350px] border-2 rounded-md"
+        className="hover:cursor-pointer overflow-hidden h-full w-full"
       >
         <img
-          className="grid-item object-cover object-center hover:scale-110 h-full w-full transition-all duration-500 "
+          className=" object-cover object-left h-full w-full transition-all duration-500 "
           src={props.image}
         />
       </div>
