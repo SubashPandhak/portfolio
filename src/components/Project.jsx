@@ -31,7 +31,7 @@ function Project() {
             My Project.
           </h1>
           <div className="flex justify-between items-center">
-            <div className="flex flex-col font-system text-white text-4xl lg:text-5xl md:h-[400px] lg:h-[450px] place-content-end">
+            <div className="flex flex-col font-system text-white text-4xl md:text-5xl lg:text-5xl md:h-[400px] lg:h-[450px] lg:place-content-end">
               <ImageOnHover
                 name={"Mero Music-Player"}
                 setImage={setImage}
@@ -68,8 +68,8 @@ function Project() {
               />
             </div>
             {image && (
-              <div className=" bg-red overflow-hidden md:h-[400px] lg:h-[450px] md:w-[450px] lg:w-[550px] md:border-b-2 md:border-r-2 rounded-tl-[100px]">
-                <Images animation={"fade-down-right"} image={image} />
+              <div className=" bg-red hidden lg:block overflow-hidden md:h-[400px] lg:h-[450px] md:w-[450px] lg:w-[550px] rounded-tl-[150px] border-r-2 border-b-2 pr-4 pb-4">
+                <Images animation={"flip-right"} image={image} />
               </div>
             )}
           </div>

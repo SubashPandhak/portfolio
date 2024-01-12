@@ -18,7 +18,7 @@ function ImageOnHover(props) {
         onMouseLeave={handleImageLeave}
       >
         <a href="https://main--mero-music-player.netlify.app/" target="_blank">
-          <p className="pt-4 ">{props.name}</p>
+          <p className="pt-4 md:pt-6 ">{props.name}</p>
           <img className="h-2 w-full " src={line} />
         </a>
       </div>

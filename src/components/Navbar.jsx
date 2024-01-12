@@ -25,7 +25,7 @@ function Navbar(props) {
       </a>
 
       <div
-        className="flex flex-col justify-center items-center group z-10 fixed  top-6 right-4 md:right-5 md:top-7 lg:right-7 lg:top-9"
+        className="flex flex-col cursor-pointer justify-center items-center group z-10 fixed  top-6 right-4 md:right-5 md:top-7 lg:right-7 lg:top-9"
         onClick={() => {
           props.setOpen((prev) => !prev);
           props.setIsNavClicked((prev) => !prev);
