@@ -12,7 +12,6 @@ import guessGame from "../assets/project-profile/guess-game.png";
 import movieWatch from "../assets/project-profile/movie-watch.png";
 import musicPlayer from "../assets/project-profile/music-player.png";
 import textutils from "../assets/project-profile/textutils.png";
-import line from "../assets/undis.png";
 import ImageOnHover from "./ImageOnHover";
 
 function Project() {

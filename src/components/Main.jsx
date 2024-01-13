@@ -42,7 +42,7 @@ function Main(props) {
                 src={profile}
               />
               <div className="font-system font-semibold md:font-bold text-white flex justify-center items-center flex-col">
-                <p className="text-8xl md:text-9xl lg:text-8xl mt-3">
+                <p className="text-7xl md:text-9xl lg:text-8xl mt-3">
                   Subash Limbu
                 </p>
                 <p className="text-2xl md:text-4xl lg:text-3xl mt-2">
