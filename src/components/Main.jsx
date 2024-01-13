@@ -57,9 +57,6 @@ function Main(props) {
         <div id="about-us">
           <SharedAbout />
         </div>
-        <div id="contact">
-          <Contact />
-        </div>
         <div id="education">
           <Education />
         </div>
@@ -68,6 +65,9 @@ function Main(props) {
         </div>
         <div id="projects">
           <Project />
+        </div>
+        <div id="contact">
+          <Contact />
         </div>
       </div>
     </>

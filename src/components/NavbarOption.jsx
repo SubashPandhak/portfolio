@@ -27,11 +27,6 @@ function NavbarOption(props) {
             </a>
           </div>
           <div onClick={props.handleNavClick}>
-            <a href="#contact">
-              <Logo title={"Contact"} />
-            </a>
-          </div>
-          <div onClick={props.handleNavClick}>
             <a href="#education">
               <Logo title={"Education"} />
             </a>
@@ -44,6 +39,11 @@ function NavbarOption(props) {
           <div onClick={props.handleNavClick}>
             <a href="#projects">
               <Logo title={"Projects"} />
+            </a>
+          </div>
+          <div onClick={props.handleNavClick}>
+            <a href="#contact">
+              <Logo title={"Contact"} />
             </a>
           </div>
         </div>
