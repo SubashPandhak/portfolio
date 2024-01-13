@@ -38,7 +38,7 @@ function SharedAbout() {
               you'll find me sketching or singing.
             </p>
             <img
-              className="h-[230px] md:h-[340px] w-[250px] md:w-[350px]  object-fill"
+              className="h-[230px] md:h-[340px] lg:h-[360px] w-[250px] md:w-[350px]  object-fill"
               src={about}
             />
           </div>
