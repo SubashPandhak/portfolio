@@ -15,7 +15,7 @@ function NavbarOption(props) {
           props.isNavClicked ? "navclip-active" : "navclip"
         } navclip h-[80px] md:h-[120px] lg:h-[130px] pt-[12px] px-4 w-full z-10 fixed top-0 `}
       >
-        <div className="flex justify-center items-center ml-3">
+        <div className="flex justify-center items-center ml-3 md:ml-6 mt-2">
           <div onClick={props.handleNavClick}>
             <a href={"#home"}>
               <Logo title={"Home"} />
@@ -29,6 +29,11 @@ function NavbarOption(props) {
           <div onClick={props.handleNavClick}>
             <a href="#contact">
               <Logo title={"Contact"} />
+            </a>
+          </div>
+          <div onClick={props.handleNavClick}>
+            <a href="#education">
+              <Logo title={"Education"} />
             </a>
           </div>
           <div onClick={props.handleNavClick}>

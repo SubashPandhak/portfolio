@@ -13,6 +13,7 @@ import movieWatch from "../assets/project-profile/movie-watch.png";
 import musicPlayer from "../assets/project-profile/music-player.png";
 import textutils from "../assets/project-profile/textutils.png";
 import ImageOnHover from "./ImageOnHover";
+import line from "../assets/undis.png";
 
 function Project() {
   useEffect(() => {
@@ -77,6 +78,7 @@ function Project() {
               </div>
             )}
           </div>
+          <img className="h-4 w-full pt-1" src={line} />
         </div>
       </PagePadding>
     </>

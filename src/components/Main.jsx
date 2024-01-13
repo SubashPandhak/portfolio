@@ -7,6 +7,7 @@ import Project from "./Project";
 import NavbarOption from "./NavbarOption";
 import Background from "../components/Background";
 import Navbar from "../components/Navbar";
+import Education from "./Education";
 
 function Main(props) {
   const [isOpen, setOpen] = useState(false);
@@ -57,9 +58,12 @@ function Main(props) {
         </div>
         <div id="contact">
           <Contact />
-          <div id="projects">
-            <Project />
-          </div>
+        </div>
+        <div id="education">
+          <Education />
+        </div>
+        <div id="projects">
+          <Project />
         </div>
       </div>
     </>

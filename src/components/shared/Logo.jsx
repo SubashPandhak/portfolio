@@ -5,7 +5,7 @@ function Logo(props) {
     <>
       <div className=" logo-info flex items-center justify-center ">
         {props.icon}
-        <p className="font-system text-xl md:text-4xl font-normal text-white hover:font-extrabold p-2 md:p-4 lg:p-6">
+        <p className="font-system text-base md:text-4xl lg:text-5xl font-bold text-white hover:font-extrabold p-1 md:p-2 lg:p-6">
           {props.title}
         </p>
       </div>
