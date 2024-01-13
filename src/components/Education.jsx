@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PagePadding from "./shared/PagePadding";
 import EducationShared from "./shared/EducationShared";
 import acemlogo from "../assets/acemlogo.png";
 import xavier from "../assets/xavierlogo.jpeg";
 import saptakoshi from "../assets/saptalogo.png";
 import line from "../assets/undis.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Education() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <PagePadding>
-        <div>
+        <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
           <h1 className="font-system text-5xl md:text-7xl text-white p-5 font-semibold">
             Education.
           </h1>

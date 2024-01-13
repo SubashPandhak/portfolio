@@ -1,7 +1,7 @@
 import React from "react";
 import PagePadding from "./shared/PagePadding";
 import {
-  TwitterLogo,
+  GithubLogo,
   FacebookLogo,
   InstagramLogo,
   LinkedinLogo,
@@ -56,32 +56,49 @@ function Contact() {
             />
             <div className="flex flex-col lg:flex-row lg:gap-5">
               <div>
-                <div className="text-[#58c3eb] p-2">
-                  <ContactLogo
-                    icon={<TwitterLogo color="#58c3eb" />}
-                    name={"Twitter"}
-                  />
-                </div>
-                <div className="text-[#007dbe] p-2">
-                  <ContactLogo
-                    icon={<LinkedinLogo color="#007dbe" />}
-                    name={"Linkedin"}
-                  />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/subash-limbu-88967a242/"
+                  target="_blank"
+                >
+                  <div className="text-[#007dbe] p-2">
+                    <ContactLogo
+                      icon={<LinkedinLogo color="#007dbe" />}
+                      name={"Linkedin"}
+                    />
+                  </div>
+                </a>
+                <a href="https://github.com/SubashPandhak" target="_blank">
+                  <div className="text-[#808080] p-2">
+                    <ContactLogo
+                      icon={<GithubLogo color="#808080" />}
+                      name={"Github"}
+                    />
+                  </div>
+                </a>
               </div>
               <div>
-                <div className="text-[#3b5998] p-2">
-                  <ContactLogo
-                    icon={<FacebookLogo color="#3b5998" />}
-                    name={"Facebook"}
-                  />
-                </div>
-                <div className="text-[#ef0476] p-2">
-                  <ContactLogo
-                    icon={<InstagramLogo color="#ef0476" />}
-                    name={"Instagram"}
-                  />
-                </div>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100055812813830"
+                  target="_blank"
+                >
+                  <div className="text-[#3b5998] p-2">
+                    <ContactLogo
+                      icon={<FacebookLogo color="#3b5998" />}
+                      name={"Facebook"}
+                    />
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/blazesuraj77/"
+                  target="_blank"
+                >
+                  <div className="text-[#ef0476] p-2">
+                    <ContactLogo
+                      icon={<InstagramLogo color="#ef0476" />}
+                      name={"Instagram"}
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
