@@ -10,12 +10,17 @@ function ImageOnHover(props) {
     props.setImage(null);
   };
 
+  const handleClick = () => {
+    window.open(props.link, "_blank");
+  }
+
   return (
     <>
       <div
         className="w-fit cursor-pointer hover:font-bold"
         onMouseEnter={handleImageEnter}
         onMouseLeave={handleImageLeave}
+        onClick={handleClick}
       >
         <a href="https://main--mero-music-player.netlify.app/" target="_blank">
           <p className="pt-4 md:pt-6 ">{props.name}</p>

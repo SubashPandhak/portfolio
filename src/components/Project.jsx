@@ -36,9 +36,11 @@ function Project() {
                 setImage={setImage}
                 hoverImage={musicPlayer}
                 image={image}
+                link={"https://main--mero-music-player.netlify.app/"}
               />
 
               <ImageOnHover
+                link={"https://main--mero-calculatorapp.netlify.app/"}
                 name={"Mero Calculator"}
                 setImage={setImage}
                 hoverImage={calculator}
@@ -46,6 +48,7 @@ function Project() {
               />
 
               <ImageOnHover
+                link={"https://main--mero-movies.netlify.app/"}
                 name={"Mero Movies"}
                 setImage={setImage}
                 hoverImage={movieWatch}
@@ -53,6 +56,7 @@ function Project() {
               />
 
               <ImageOnHover
+                link={"https://main--mero-guess-game.netlify.app/"}
                 name={"Guess Game"}
                 setImage={setImage}
                 hoverImage={guessGame}
@@ -60,6 +64,7 @@ function Project() {
               />
 
               <ImageOnHover
+                link={"https://main--mero-textutils.netlify.app/"}
                 name={"Mero TextUtils"}
                 setImage={setImage}
                 hoverImage={textutils}
