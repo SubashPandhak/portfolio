@@ -23,7 +23,7 @@ function SharedAbout() {
           >
             <h1 className=" text-5xl md:text-7xl mb-7 font-semibold">About.</h1>
             <p className="text-4xl md:text-5xl mb-6 ">
-              I'm a product designer based in sunny Sydney, Australia.
+              I'm a student and a passionate learner of web development.
             </p>
           </div>
           <div
@@ -33,12 +33,12 @@ function SharedAbout() {
             className="flex font-system justify-between place-items-end md:items-center lg:items-center"
           >
             <p className="text-lg md:text-3xl w-[50%]">
-              Since 2005, I've enjoyed turning complex problems into simple,
-              beautiful and intuitive designs. When I'm not pushing pixels,
-              you'll find me cooking, gardening or working out in the park.
+              Since few years, I've enjoyed building and solving complex
+              problems into a web app. When I'm not designing and developing,
+              you'll find me sketching or singing.
             </p>
             <img
-              className="h-[200px] md:h-[300px] w-[250px] md:w-[350px]  object-fill"
+              className="h-[230px] md:h-[340px] w-[250px] md:w-[350px]  object-fill"
               src={about}
             />
           </div>

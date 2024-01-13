@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SharedAbout from "./shared/SharedAbout";
 import PagePadding from "./shared/PagePadding";
 import Contact from "./Contact";
-import profile from "../assets/about.jpg";
+import profile from "../assets/me.jpg";
 import Project from "./Project";
 import NavbarOption from "./NavbarOption";
 import Background from "../components/Background";
@@ -48,7 +48,7 @@ function Main(props) {
                   Subash Limbu
                 </p>
                 <p className="text-2xl md:text-4xl lg:text-3xl mt-2">
-                  Frontend Developer and Designer
+                  Passionate Learner
                 </p>
               </div>
             </div>
